@@ -1,0 +1,318 @@
+/* Import de la police Nunito */
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap");
+
+/* Variables CSS pour la palette et les espacements */
+:root {
+  --color-primary: #8b4513; /* Marron moderne */
+  --color-accent: #ffa500; /* Orange */
+  --color-bg: #f8f9fa;
+  --color-text: #222;
+  --color-white: #fff;
+  --header-height: 64px;
+  --radius: 12px;
+  --shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
+  --transition: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Reset de base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  background: var(--color-bg);
+  color: var(--color-text);
+  line-height: 1.6;
+}
+
+/* Header moderne et sticky */
+header {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  height: var(--header-height);
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: var(--shadow);
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+/* Logo */
+#logo {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+/* Navigation centrée et épurée */
+nav {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+nav a {
+  color: var(--color-white);
+  font-weight: 700;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius);
+  transition: background var(--transition), color var(--transition),
+    box-shadow var(--transition);
+}
+
+nav a:hover,
+nav a:focus {
+  background: var(--color-accent);
+  color: var(--color-primary);
+  box-shadow: 0 2px 8px rgba(255, 165, 0, 0.15);
+}
+
+.menu-droite {
+  margin-left: auto;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+#connexion {
+  margin-left: auto;
+}
+
+/* Contenu principal */
+#contenu {
+  margin: calc(var(--header-height) + 2rem) auto 2rem auto;
+  max-width: 900px;
+  padding: 2rem;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+/* Titres */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+}
+
+/* Tableaux modernisés */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-bg);
+  border-radius: var(--radius);
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+th,
+td {
+  padding: 1rem;
+  border-bottom: 1px solid #ececec;
+  text-align: left;
+}
+
+th {
+  background: var(--color-primary);
+  color: var(--color-white);
+  font-weight: 700;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+td input[type="text"],
+td textarea {
+  font-family: inherit;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 0.5rem;
+  transition: border var(--transition);
+}
+
+td input[type="text"]:focus,
+td textarea:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+
+/* Connexion & Inscription Forms */
+form {
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2rem 2.5rem;
+  max-width: 350px;
+  margin: 2rem auto 1.5rem auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  padding: 0.7rem 1rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border var(--transition);
+}
+form input:focus {
+  border-color: var(--color-accent);
+  outline: none;
+}
+form button {
+  background: var(--color-primary);
+  color: var(--color-white);
+  border: none;
+  border-radius: var(--radius);
+  padding: 0.7rem 1rem;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background var(--transition);
+}
+form button:hover {
+  background: var(--color-accent);
+  color: var(--color-primary);
+}
+form p, form h2 {
+  text-align: center;
+}
+
+/* Panel membres */
+#contenu h1 {
+  margin-bottom: 2rem;
+}
+#contenu table {
+  margin: 0 auto 2rem auto;
+  width: 100%;
+  background: var(--color-white);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+}
+#contenu th, #contenu td {
+  padding: 0.8rem 0.5rem;
+  text-align: center;
+}
+#contenu th {
+  background: var(--color-primary);
+  color: var(--color-white);
+}
+#contenu tr:nth-child(even) {
+  background: #f4f4f4;
+}
+#contenu form[method="post"] {
+  display: flex;
+  flex-direction: row;
+  gap: 0.3rem;
+  background: none;
+  box-shadow: none;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+}
+#contenu form[method="post"] input[type="text"],
+#contenu form[method="post"] input[type="email"] {
+  padding: 0.3rem 0.5rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+#contenu form[method="post"] button {
+  padding: 0.3rem 0.7rem;
+  font-size: 0.95rem;
+  border-radius: 4px;
+}
+#contenu a[style*="color:red"] {
+  color: #c0392b !important;
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Footer collé en bas */
+footer {
+	position: fixed;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+	padding: 1rem;
+	background: var(--color-primary);
+	color: var(--color-white);
+	margin-top: 2rem;
+	z-index: 100;
+}
+
+/* Bouton retour à l'accueil */
+.btn-retour {
+  display: inline-block;
+  margin: 2rem auto 1rem 2rem;
+  padding: 0.5rem 1.2rem;
+  background: var(--color-accent);
+  color: var(--color-primary);
+  border-radius: 24px;
+  font-weight: 700;
+  font-size: 1rem;
+  text-decoration: none;
+  box-shadow: 0 2px 8px rgba(255, 165, 0, 0.10);
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.btn-retour:hover, .btn-retour:focus {
+  background: var(--color-primary);
+  color: var(--color-white);
+  box-shadow: 0 4px 16px rgba(139, 69, 19, 0.12);
+}
+
+/* Responsive design */
+@media (max-width: 700px) {
+  header,
+  #contenu {
+    padding: 1rem;
+  }
+  nav {
+    gap: 1rem;
+  }
+  #contenu {
+    padding: 1rem;
+  }
+  table,
+  th,
+  td {
+    font-size: 0.95rem;
+  }
+  form {
+    padding: 1rem;
+    max-width: 98vw;
+  }
+  #contenu table, #contenu th, #contenu td {
+    font-size: 0.92rem;
+    padding: 0.5rem;
+  }
+}
