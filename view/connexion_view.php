@@ -265,7 +265,7 @@ include __DIR__ . '/autres_pages/header.php';
     <link
         href="https://fonts.googleapis.com/css2?family=Bree+Serif&family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Kalnia:wght@100..700&display=swap"
         rel="stylesheet">
-    <link rel="icon" type="image/x-icon" href="/images/rose-logo.png">
+    <link rel="icon" type="image/x-icon" href="/view/images/rose-logo.png">
     <title>Murder Party</title>
 </head>
 
