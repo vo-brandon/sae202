@@ -3,6 +3,7 @@ if (!isset($_SESSION))
 	session_start();
 $page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 ?>
+<link rel="stylesheet" href="/view/css/style.css" />
 <header<?php if ($page === 'info' || $page === 'info.php')
 	echo ' id="black"'; ?>>
 	<a href="/" id="logo"><img

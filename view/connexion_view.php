@@ -1,3 +1,9 @@
+<?php
+if (!isset($_SESSION))
+    session_start();
+include __DIR__ . '/autres_pages/header.php';
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -264,46 +270,7 @@
 </head>
 
 <body>
-    <header>
-        <a href="/" id="logo"><img src="/images/room107-brown.png" alt="Home"></a>
-        <div>
-            <a href="/accueil"><img src="/view/images/home.svg" alt="Home Button" class="nav-icon-button">
-                <p class="nav-text-button">ACCUEIL</p>
-            </a>
-            <span></span>
-        </div>
-        <div>
-            <a href="/concept"><img src="/images/concept.svg" alt="Concept Button" class="nav-icon-button">
-                <p class="nav-text-button">CONCEPT</p>
-            </a>
-            <span></span>
-        </div>
-        <div>
-            <a href="/info"><img src="/images/info.svg" alt="Info Button" class="nav-icon-button">
-                <p class="nav-text-button">INFO PRATIQUES</p>
-            </a>
-            <span></span>
-        </div>
-        <div>
-            <a href="/contact"><img src="/images/contact.svg" alt="Contact Button" class="nav-icon-button">
-                <p class="nav-text-button">CONTACT</p>
-            </a>
-            <span></span>
-        </div>
-        <div>
-            <a href="/admin"><img src="/images/admin.svg" alt="Admin Button" class="nav-icon-button">
-                <p class="nav-text-button">ADMIN</p>
-            </a>
-            <span></span>
-        </div>
-        <div>
-            <a href="/profil"><img src="/images/profil.svg" alt="Profil Button" class="nav-icon-button">
-                <p class="nav-text-button">PROFIL</p>
-            </a>
-            <span></span>
-        </div>
-        <a href="/connexion" class="oval-button">CONNEXION</a>
-    </header>
+    <?php // header déjà importé en haut du fichier ?>
 
     <main>
         <div class="hero">
