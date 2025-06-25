@@ -22,9 +22,6 @@ if (!isset($_SESSION))
     <?php include_once __DIR__ . '/autres_pages/header.php'; ?>
     <main>
         <div class="hero-black" id="concept" class="title">
-            <div class="hero-img-container">
-                <img src="/view/images/hero.png" alt="Décor Murder Party" class="hero-img" />
-            </div>
             <div>
                 <p>Une Murder Party est un jeu d'enquête grandeur nature, souvent immersif et scénarisé, où les
                     participant·es incarnent des personnages impliqués dans une intrigue criminelle, généralement un
@@ -42,7 +39,13 @@ if (!isset($_SESSION))
         </div>
         <div id="page-max-width">
             <div id="hero">
-                <img src="/view/images/hero2.png" alt="Ambiance Hôtel" class="hero2-img" />
+                <style>
+                    #hero {
+                        background-image: url("/view/images/hero2.png");
+                        background-size: cover;
+                        background-position: center;
+                    }
+                </style>
             </div>
             <section id="scenario">
                 <h1 class="title">Scénario</h1>
@@ -77,14 +80,32 @@ if (!isset($_SESSION))
             <section id="images">
                 <div id="left-side">
                     <div id="elem1">
-                        <img src="/view/images/hotel-1.png" alt="Hôtel 1" class="img-elem" />
+                        <style>
+                            #elem1 {
+                                background-image: url("/view/images/hotel-1.png");
+                                background-size: cover;
+                                background-position: center;
+                            }
+                        </style>
                     </div>
                     <div id="elem2">
-                        <img src="/view/images/hotel-2.png" alt="Hôtel 2" class="img-elem" />
+                        <style>
+                            #elem2 {
+                                background-image: url("/view/images/hotel-3.png");
+                                background-size: cover;
+                                background-position: center;
+                            }
+                        </style>
                     </div>
                 </div>
                 <div id="right-side">
-                    <img src="/view/images/hotel-3.png" alt="Hôtel 3" class="img-elem" />
+                    <style>
+                        #right-side {
+                            background-image: url("/view/images/hotel-2.png");
+                            background-size: cover;
+                            background-position: center;
+                        }
+                    </style>
                 </div>
             </section>
             <section id="concept-info">
