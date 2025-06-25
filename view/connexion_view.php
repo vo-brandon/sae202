@@ -267,7 +267,7 @@
     <header>
         <a href="/" id="logo"><img src="/images/room107-brown.png" alt="Home"></a>
         <div>
-            <a href="/accueil"><img src="/images/home.svg" alt="Home Button" class="nav-icon-button">
+            <a href="/accueil"><img src="/view/images/home.svg" alt="Home Button" class="nav-icon-button">
                 <p class="nav-text-button">ACCUEIL</p>
             </a>
             <span></span>
