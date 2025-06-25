@@ -34,6 +34,8 @@
 			</div>
 
 			<div id="hero">
+				<img src="/view/images/hero.png" alt="Décor Murder Party"
+					style="width:100%;height:100%;object-fit:cover;">
 			</div>
 
 			<img src="/view/images/rose.png" alt="rose" id="hero-rose" class="absolute-side-image">
@@ -84,8 +86,11 @@
 		<section id="presentation">
 			<div id="images">
 				<div id="elem1">
+					<img src="/view/images/table-img.png" alt="Table" style="width:100%;height:100%;object-fit:cover;">
 				</div>
 				<div id="elem2">
+					<img src="/view/images/phone-img.png" alt="Téléphone"
+						style="width:100%;height:100%;object-fit:cover;">
 				</div>
 			</div>
 			<div id="text">
