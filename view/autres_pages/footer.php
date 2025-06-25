@@ -1,3 +1,6 @@
+<!-- Import du CSS principal -->
+<link rel="stylesheet" href="/view/css/style.css">
+
 <footer>
 	<div id="infos">
 		<div id="agency">

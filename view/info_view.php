@@ -35,7 +35,7 @@ if (!isset($_SESSION))
                         <p>Parking - gratuit</p>
                         <p><b>Hôtel Cecyl Reims</b><br><a href="/">24 Rue Buirette, 51100 Reims</a></p>
                     </div>
-                    <a href="/" class="oval-button">Y aller !</a>
+                    <a href="/reservation_user" class="oval-button">Y aller !</a>
                 </div>
                 <div id="img">
 
@@ -48,7 +48,7 @@ if (!isset($_SESSION))
                         <p><b>Tarif classic -</b> 39,99 €</p>
                         <p><b>Tarif Réduit -</b> 29,99 € <br>Pour les étudiants et les personnes </p>
                     </div>
-                    <a href="/" class="oval-button">Réserver</a>
+                    <a href="/reservation_user" class="oval-button">Réserver</a>
                 </div>
                 <div id="img">
 
@@ -61,7 +61,7 @@ if (!isset($_SESSION))
                         <p><b>Date -</b> 12/06/25</p>
                         <b>De 16h à 18h</b>
                     </div>
-                    <a href="/" class="oval-button">Nous contacter</a>
+                    <a href="/messagerie" class="oval-button">Nous contacter</a>
                 </div>
                 <div id="img">
 

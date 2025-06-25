@@ -15,6 +15,7 @@
 </head>
 
 <body>
+	<?php include __DIR__ . '/autres_pages/header.php'; ?>
 
 	<main>
 		<div id="page-max-width">

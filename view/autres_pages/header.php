@@ -3,8 +3,11 @@ if (!isset($_SESSION))
 	session_start();
 $page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 ?>
-<header>
-	<a href="/" id="logo"><img src="/view/images/room107-brown.png" alt="Home"></a>
+<header<?php if ($page === 'info' || $page === 'info.php')
+	echo ' id="black"'; ?>>
+	<a href="/" id="logo"><img
+			src="/view/images/room107-<?php echo ($page === 'info' || $page === 'info.php') ? 'white' : 'brown'; ?>.png"
+			alt="Home"></a>
 	<div>
 		<a href="/"><img src="/view/images/home.svg" alt="Home Button" class="nav-icon-button">
 			<p class="nav-text-button">ACCUEIL</p>
@@ -58,4 +61,4 @@ $page = basename(parse_url($_SERVER['REQUEST_URI'], PHP_URL_PATH));
 	} else { ?>
 		<a href="/connexion" class="oval-button">CONNEXION</a>
 	<?php } ?>
-</header>
+	</header>
